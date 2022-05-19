@@ -8,7 +8,7 @@
   "scripts": {
     "prepare": "tsc --build --verbose",
     "dev:test": "jest --colors",
-    "build": "npx tsc --build --verbose",
+    "build": "tsc --build --verbose",
     "cli": "ts-node src/index.ts"
   },
   "dependencies": {
