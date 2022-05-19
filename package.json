@@ -6,7 +6,7 @@
   "main": "build/index.js",
   "bin": "build/index.js",
   "scripts": {
-    "prepare": "npx tsc --build --verbose",
+    "prepare": "npm install && tsc --build --verbose",
     "dev:test": "jest --colors",
     "build": "npx tsc --build --verbose",
     "cli": "ts-node src/index.ts"
