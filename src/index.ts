@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { initializeCli } from "@useoptic/optic-ci/build/initialize";
 import { publicApiStandards } from "./public-api-standards";
 import { internalApiStandards } from "./internal-api-standards";
