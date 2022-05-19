@@ -1,16 +1,17 @@
 {
   "name": "your-company-apis",
+  "license": "ISC",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
-  "bin": "build/index.js",
+  "bin": {
+    "your-company-apis": "build/index.js"
+  },
   "scripts": {
     "dev:test": "jest --colors",
     "build": "yarn tsc --build --verbose",
     "cli": "ts-node src/index.ts"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@useoptic/optic-ci": "^0.25.6",
     "@useoptic/rulesets-base": "^0.25.6"
