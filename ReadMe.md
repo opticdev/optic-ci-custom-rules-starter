@@ -7,7 +7,7 @@
    ```
 2. Choose license:
    ```bash
-   2|  "license": "company-apis"
+   2|  "license": "ISC"
    ```
 
 ### Pick a distribution strategy
