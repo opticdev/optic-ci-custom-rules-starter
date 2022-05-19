@@ -1,7 +1,10 @@
 import { Rule, Ruleset } from "@useoptic/rulesets-base";
+import allOperations from "./all-operations";
+import getOperations from "./get-operations";
+import postOperations from "./post-operations";
 
 export const publicApiStandards: (Ruleset | Rule)[] = [
-  require("./all-operations"),
-  require("./get-operations"),
-  require("./post-operations"),
+  allOperations,
+  getOperations,
+  postOperations,
 ];
