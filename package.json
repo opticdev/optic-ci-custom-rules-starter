@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
-  "bin": "build/index.js"
+  "bin": "build/index.js",
   "scripts": {
     "dev:test": "jest --colors",
     "build": "yarn tsc --build --verbose",
