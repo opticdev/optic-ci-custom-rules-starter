@@ -1,13 +1,15 @@
-import { Rule, Ruleset, OperationRule } from "@useoptic/rulesets-base";
+import { OperationRule, Ruleset } from "@useoptic/rulesets-base";
 
 export default new Ruleset({
-  name: "Public GET Operations",
-  matches: (context) => context.operation.method === "GET",
+  name: "GET Operations",
+  matches: (context) => context.operation.method === "get",
   rules: [
     new OperationRule({
       name: "have correct status codes",
       rule: (operation) => {
-        operation.requirement.hasResponses([{ statusCode: "200" }]);
+        operation.requirement.hasResponses([
+          { statusCode: "201", contentType: "application/json" },
+        ]);
       },
     }),
   ],

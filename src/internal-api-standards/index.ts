@@ -1,5 +1,3 @@
-import {Rule, Ruleset} from "@useoptic/rulesets-base";
+import { Rule, Ruleset } from "@useoptic/rulesets-base";
 
-export const internalApiStandards: (Ruleset | Rule)[] = [
-  require('./get')
-]
+export const internalApiStandards: (Ruleset | Rule)[] = [];
