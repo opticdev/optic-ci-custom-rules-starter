@@ -1,4 +1,4 @@
-import { OperationRule, Ruleset } from "@useoptic/rulesets-base";
+import { OperationRule, ResponseRule, Ruleset } from "@useoptic/rulesets-base";
 
 export default new Ruleset({
   name: "GET Operations",
@@ -13,4 +13,12 @@ export default new Ruleset({
       },
     }),
   ],
+});
+
+new ResponseRule({
+  name: "Has 201 status codes",
+  docsLink: "https://optic.com/standards/post-operations#statuscode201",
+  rule: (response, context) => {
+    response.added;
+  },
 });
